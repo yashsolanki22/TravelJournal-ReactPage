@@ -1,13 +1,148 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #2B283A;
+}
+
+/* ==========
+  Typography
+  =========== */
+
+#location-items {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.location {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 1rem;
+}
+
+.view-location {
+  font-size: 12px;
+}
+
+.view-location a {
+  color: #918E9B;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.date {
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.description {
+  line-height: 1.5rem;
+}
+
+/* ===============
+  Navbar-container
+  ================ */
+
+.navbar-container {
+  background-color: #F55A5A;
+  margin: 0;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.navbar-container img {
+  width: 44px;
+  margin-right: 8px;
+}
+
+.navbar-container span {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.055rem;
+}
+
+
+/* ================================
+  main container --> card container
+  ================================= */
+/* */
+
+.main-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.image-container {
+  width:23%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image {
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info-container {
+  width:70%;
+  padding: 1.8rem 0;
+}
+
+.icon-location {
+  margin-right: 4px;
+  margin-bottom: 0;
+}
+
+
+
+@media screen and (max-width:450px) {
+  body {
+    /* background-color: #F55A5A; */
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .card-container {
+    /* display: flex; */
+    flex-direction: column;
+    /* width: 100%; */
+  }
+
+  .image-container,
+  .info-container {
+    padding: 0 1rem;
+  }
+
+  .image-container {
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .info-container {
+    /* border: 1px solid magenta; */
+    width: 100%;
+  }
+
 }
